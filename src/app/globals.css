@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Valors de la paleta "Oceà Profund" */
+    --background: 200 50% 96%;
+    --foreground: 210 40% 15%;
+    --card: 200 40% 99%;
+    --card-foreground: 210 40% 15%;
+    --popover: 200 40% 99%;
+    --popover-foreground: 210 40% 15%;
+    --primary: 210 70% 45%;
+    --primary-foreground: 210 20% 95%;
+    --secondary: 190 60% 88%;
+    --secondary-foreground: 190 30% 25%;
+    --muted: 200 30% 93%;
+    --muted-foreground: 200 20% 50%;
+    --accent: 220 20% 60%; 
+    --accent-foreground: 220 15% 20%; /* UPDATED */
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 200 30% 85%;
+    --input: 200 30% 90%;
+    --ring: 210 70% 55%;
+    --radius: 0.5rem;
+
+    --chart-1: 210 70% 50%; /* Ajustat per coherència amb primari */
+    --chart-2: 190 60% 45%;
+    --chart-3: 35 80% 55%; /* Accent per a gràfics */
+    --chart-4: 220 65% 60%;
+    --chart-5: 180 75% 55%;
+
+    /* Variables del Sidebar per a "Oceà Profund" */
+    --sidebar-background: 220 30% 25%;
+    --sidebar-foreground: 200 30% 85%;
+    --sidebar-primary: 195 60% 50%; 
+    --sidebar-primary-foreground: 195 15% 95%;
+    --sidebar-accent: 220 20% 35%; 
+    --sidebar-accent-foreground: 200 40% 90%;
+    --sidebar-border: 220 20% 30%;
+    --sidebar-ring: 195 60% 60%;
+  }
+
+  .dark {
+    /* Valors per defecte per a dark mode, podrien ser una paleta "Oceà Profund Fosc" */
+    --background: 220 30% 10%; /* Blau molt fosc */
+    --foreground: 200 30% 90%; /* Text clar */
+    --card: 220 30% 15%;
+    --card-foreground: 200 30% 90%;
+    --popover: 220 30% 15%;
+    --popover-foreground: 200 30% 90%;
+    --primary: 210 70% 55%; /* Blau primari una mica més brillant */
+    --primary-foreground: 210 20% 10%; /* Text fosc per a botons primaris */
+    --secondary: 220 20% 25%; /* Blau secundari fosc */
+    --secondary-foreground: 200 30% 85%;
+    --muted: 220 20% 20%;
+    --muted-foreground: 200 20% 60%;
+    --accent: 35 100% 65%; /* Accent Coral/Orange una mica més brillant */
+    --accent-foreground: 35 30% 15%;
+    --destructive: 0 62.8% 40.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 25%;
+    --input: 220 20% 20%;
+    --ring: 210 70% 65%;
+    
+    --chart-1: 210 70% 60%;
+    --chart-2: 190 60% 55%;
+    --chart-3: 35 80% 65%;
+    --chart-4: 220 65% 70%;
+    --chart-5: 180 75% 65%;
+
+    /* Variables del Sidebar per a dark mode "Oceà Profund" */
+    --sidebar-background: 220 25% 8%; /* Encara més fosc */
+    --sidebar-foreground: 200 30% 80%;
+    --sidebar-primary: 195 60% 55%; 
+    --sidebar-primary-foreground: 195 15% 10%;
+    --sidebar-accent: 220 15% 20%; 
+    --sidebar-accent-foreground: 200 40% 85%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 195 60% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
